@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "xmgames-mod",
+	"version": "${version}",
+	"name": "Xmgam3s Mod",
+	"description": "This is my first mod for Minecraft",
+	"authors": [
+		"Xmgam3s!"
+	],
+	"contact": {
+		"homepage": "https://yaroslavxm.github.io",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/xmgames-mod/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"io.xmgames.mod.Xmgam3sMod"
+		],
+		"fabric-datagen": [
+			"io.xmgames.mod.Xmgam3sModDataGenerator"
+		],
+		"client": [
+			"io.xmgames.mod.Xmgam3sModClient"
+		]
+	},
+	"mixins": [
+		"xmgames-mod.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.10",
+		"minecraft": "~1.21.4",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
